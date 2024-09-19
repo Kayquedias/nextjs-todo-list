@@ -1,5 +1,5 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"],
+  "extends": ["next/core-web-vitals", "next/typescript", "@rocketseat/eslint-config/next"],
   "rules": {
         "indent": [
             "error",
@@ -26,6 +26,15 @@
         "object-curly-spacing": [
             "error",
             "always"
-        ],
-    }
+        ]
+    },
+    "overrides": [
+        {
+            "files": ["src/**/layout.tsx"],
+            "rules": {
+                "camelcase": "off",
+                "quotes": "off"
+            }
+        }
+    ]
 }
