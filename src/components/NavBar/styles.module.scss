@@ -1,0 +1,23 @@
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.dateInfo {
+  color: rgba(0, 0, 0, 0.54);
+  letter-spacing: -2%;
+  line-height: 19px;
+}
