@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-import LogoImage from '@/assets/logo-image.png'
-import LogoText from '@/assets/logo-text.svg'
+import LogoImage from '../../assets/logo-image.png'
+import LogoText from '../../assets/logo-text.svg'
 
 import styles from './styles.module.scss'
 
