@@ -1,3 +1,40 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript", "@rocketseat/eslint-config/next"],
+  "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "no-tabs": 0,
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "@typescript-eslint/no-namespace": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "@typescript-eslint/no-empty-interface": 0,
+        "@typescript-eslint/no-empty-function": 0,
+        "@typescript-eslint/no-unused-vars": "error",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ]
+    },
+    "overrides": [
+        {
+            "files": ["src/**/layout.tsx"],
+            "rules": {
+                "camelcase": "off",
+                "quotes": "off"
+            }
+        }
+    ]
 }
