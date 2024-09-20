@@ -3,6 +3,7 @@ import { Inter_Tight } from 'next/font/google'
 
 import globals from './global.module.scss'
 import { NavBar } from '@/components/NavBar'
+import { Divider } from '@/components/Divider'
 
 export const metadata: Metadata = {
   title: `Marcus' todo list`,
@@ -22,6 +23,8 @@ export default function RootLayout({
     <html lang="pt-br" className={tightInter.className}>
       <body className={globals.bodyStyles}>
         <NavBar />
+
+        <Divider />
 
         {children}
       </body>
