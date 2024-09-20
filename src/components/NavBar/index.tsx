@@ -8,7 +8,7 @@ export function NavBar() {
   return (
     <header className={styles.heading}>
       <div className={styles.logoWrapper}>
-        <Image src={'/logo-image.png'} alt="" width={32} height={32} />
+        <Image src={'/Assets/logo-image.png'} alt="" width={32} height={32} />
         <Image src={LogoText} alt="" />
       </div>
 
