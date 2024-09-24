@@ -1,0 +1,9 @@
+@import '~@/app/global.module.scss';
+
+.divider {
+  background-color: $gray-400;
+  width: 100%;
+  height: 1px;
+
+  margin-top: 24px;
+}
