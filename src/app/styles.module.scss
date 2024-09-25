@@ -1,0 +1,68 @@
+@import '~@/app/global.module.scss';
+
+.section {
+  width: 100%;
+  max-width: 450px;
+
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid $gray-300;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  box-shadow: 0 1px 2px 0 #10182805;
+
+  p {
+    color: $gray-600;
+    text-align: center;
+  }
+}
+
+.tasksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+
+  border-radius: 8px;
+  border: 1px dashed $gray-400;
+  transition: border 0.3s, background-color 0.3s ;
+
+  span {
+    margin-left: 1rem;
+  }
+
+  img {
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: #F7F9FD;
+    border: 1px solid #F7F9FD;
+  }
+}
+
+.button {
+  background-image: linear-gradient(to left, #53C0F0 0%, #53C0F0 60%, $blue-600 100%);
+  background-size: 200%;
+  transition: 0.3s;
+
+  &:hover {
+    background-position: right;
+  }
+}

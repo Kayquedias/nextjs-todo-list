@@ -1,0 +1,14 @@
+@import '~@/app/global.module.scss';
+
+.button {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+}

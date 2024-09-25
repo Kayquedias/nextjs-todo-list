@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter_Tight } from 'next/font/google'
 
 import globals from './global.module.scss'
+import './global.css'
+
 import { NavBar } from '@/components/NavBar'
 import { Divider } from '@/components/Divider'
 
@@ -20,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br" className={tightInter.className}>
+    <html lang="pt-br" className={`${tightInter.className} ${globals.html}`}>
       <body className={globals.bodyStyles}>
         <NavBar />
 
